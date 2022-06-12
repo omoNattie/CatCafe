@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block head %}
+ <title>Cat Cafe!</title>
+ <link rel="icon" href="/static/images/assets/icon_50x50.png" type="x/icon">
+{% endblock %}
+
+{% block body %}
+<div class="btm">
+    <div class="center">
+        <p>Powered by:</p>
+        <a href="http://catboys.com" target="_blank">
+            <img src="./static/images/assets/catboyslogo.png" alt="logo" width="40" height="40" class="logo"/>
+        </a>
+    </div>
+</div>
+<br>
+<br>
+<div class="main-content">
+    <img src="{{ owo_image }}" alt="death" class="catboy"/>
+</div>
+<br>
+<div class="stuff">
+    <form action="/" method="post">
+        <input type="submit" value="NewCat" name="NewCat" class="btn-main"/>
+    </form>
+</div>
+{% endblock %}

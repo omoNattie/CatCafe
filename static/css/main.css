@@ -1,0 +1,75 @@
+@media (min-width: 1280px) {
+    :root { font-size: 20px }
+}
+
+@media (min-width: 1920px) {
+    .logo { 
+        padding: 2rem;
+    }
+
+    :root { font-size: 30px }
+}
+
+body {
+    background-color:cornflowerblue;
+    margin: 0; 
+}
+
+@font-face {
+    font-family: built;
+    src: url("/static/fonts/built.ttf");
+}
+
+p {
+    font-family: built;
+}
+
+.btm { 
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    background-color: rgb(49, 151, 253);
+    width: 100%;
+    color: white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    font-family: built;
+}
+
+.btn-main {
+    background-color: #F5ABCC;
+    color: grey;
+    padding: 8px 10px; 
+    border-radius: 1rem;
+    transition: 0.7s;
+    border: none;
+}
+
+.btn-main:hover {
+    border-radius: 0.4rem;
+    background-color: #fad4e5;
+}
+
+.logo {
+    padding: 0.5rem;
+}
+
+.catboy {
+    width: auto;
+    height: auto;
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.stuff {
+    display: flex;
+    justify-content: center;
+}
