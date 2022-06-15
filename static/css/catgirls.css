@@ -1,0 +1,118 @@
+
+.top-catgirl {
+    overflow: hidden;
+    background-color: #d9b4e2;
+}
+
+.top-catgirl-under {
+    background-color: #bd8aca;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.top-catgirl-under a {
+    font-family: Bebas;
+    padding: 0.5rem 1rem;
+    padding-right: 1rem;
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.top-catgirl a {
+    font-family: Bebas;
+    padding: 0.5rem 1rem;
+    padding-right: 1rem;
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.top-catgirl a:hover {
+    background-color: #e9cff0;
+}
+
+.top-catgirl-under a:hover {
+    background-color: #dca0eb;
+}
+
+.mini-bar-active {
+    background-color: #dca0eb;
+}
+
+.main-catgirl-content {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.catgirl-btn {
+    background-color: #76c6d4;
+    color: black;
+    padding: 8px 10px; 
+    border-radius: 1rem;
+    transition: 0.7s;
+    border: none;
+}
+
+.catgirl-btn:hover {
+    border-radius: 0.4rem;
+    background-color: #6de9ff;
+}
+
+.catgirl-logo {
+    padding-bottom: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.catgirl-api {
+    padding-top: 0.4rem;
+}
+
+.btm-catgirl {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #ccbcf1;
+    padding: 0px 0px;
+    width: 100%;
+}
+
+.btm-catgirl-center {
+    display: flex;
+    justify-content: center;
+    font-family: built;
+}
+
+.btm-catgirl-center a {
+    text-decoration: none;
+    color: black;
+    padding-top: 1rem;
+}
+
+.catgirl {
+    width: auto;
+    height: auto;
+    max-width: 20rem;
+    max-height: 20rem;
+    margin-top: 3%;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px , 0 0 35px rgb(0, 0, 0);
+    transition: ease-in-out 0.7s;
+}
+
+.catgirl:hover {
+    transform: scale(1.5);
+}

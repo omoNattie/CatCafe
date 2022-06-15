@@ -1,0 +1,97 @@
+.top {
+    background-color: #d9b4e2;
+    overflow: hidden;
+}
+
+.top a {
+    font-family: Bebas;
+    padding: 0.5rem 1rem;
+    padding-right: 1rem;
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.top a:hover {
+    background-color: #e9cff0;
+}
+
+.active {
+    background-color: #e9cff0;
+}
+
+.btm { 
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #ccbcf1;
+    padding: 0px 0px;
+    width: 100%;
+    color: black;
+}
+
+.btm-center {
+    display: flex;
+    justify-content: center;
+    font-family: built;
+}
+
+.btm-center-under {
+    background-color: #beafe1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-main {
+    background-color: #76c6d4;
+    color: black;
+    padding: 8px 10px; 
+    border-radius: 1rem;
+    transition: 0.7s;
+    border: none;
+}
+
+.btn-main:hover {
+    border-radius: 0.4rem;
+    background-color: #6de9ff;
+}
+
+.logo {
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.git-logo {
+    padding-top: 10px;
+}
+
+.catboy {
+    width: auto;
+    height: auto;
+    margin-top: 3rem;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px , 0 0 35px rgb(0, 0, 0);
+    max-width: 20rem;
+    max-height: 20rem;
+    transition: ease-in-out 0.7s;
+}
+
+.catboy:hover {
+    margin-top: 10%;
+    transform: scale(1.5);
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.stuff {
+    display: flex;
+    justify-content: center;
+}

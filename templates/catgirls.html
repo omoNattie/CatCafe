@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Cat Cafe!</title>
+<link rel="icon" href="/static/images/assets/icon_50x50.png" type="x/icon">
+{% endblock %}
+
+
+{% block body %}
+<div class="top-catgirl">
+    <a href="/catboys">
+        Cat Boys!
+    </a>
+    <a href="/catgirls" class="active">
+        Cat Girls!
+    </a>
+</div>
+<div class="top-catgirl-under">
+    <a href="" class="mini-bar-active">
+        Neko
+    </a>
+    <a href="">
+        Avatars
+    </a>
+    <a href="">
+        Kiss
+    </a>
+    <a href="">
+        Smug
+    </a>
+    <a href="">
+        Hug
+    </a>
+    <a href="">
+        Pat
+    </a>
+</div>
+
+<div class="main-catgirl-content">
+    <img src="{{ catgirl_image }}" class="catgirl" alt="catgirl"/>
+</div>
+<br>
+<div class="btn-container">
+    <form action="/catgirls" method="post">
+        <input type="submit" class="catgirl-btn" value="More CatGirls!" name="NewCatG"/>
+    </form>
+</div>
+
+<div class="btm-catgirl">
+    <div class="btm-catgirl-center">
+        <p class="catgirl-api">Powered by: </p>
+        <a href="https://nekos.life/" target="_blank">
+            <img src="/static/images/assets/catgirlslogo.png" class="catgirl-logo" alt="Logo"/>
+        </a>
+    </div>
+</div>
+{% endblock %}
