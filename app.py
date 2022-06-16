@@ -34,7 +34,12 @@ def error():
 
 @app.route('/')
 def main():
-    return redirect(url_for('catboys'))
+    return redirect(url_for('home'))
+
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
 
 
 @app.route('/catboys', methods=['GET', 'POST'])

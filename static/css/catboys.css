@@ -1,9 +1,9 @@
-.top {
+.top-catboy {
     background-color: #d9b4e2;
     overflow: hidden;
 }
 
-.top a {
+.top-catboy a {
     font-family: Bebas;
     padding: 0.5rem 1rem;
     padding-right: 1rem;
@@ -15,15 +15,11 @@
     transition: 0.7s;
 }
 
-.top a:hover {
+.top-catboy a:hover {
     background-color: #e9cff0;
 }
 
-.active {
-    background-color: #e9cff0;
-}
-
-.btm { 
+.btm-catboy { 
     position: absolute;
     bottom: 0;
     overflow: hidden;
@@ -33,20 +29,13 @@
     color: black;
 }
 
-.btm-center {
+.btm-center-catboy {
     display: flex;
     justify-content: center;
     font-family: built;
 }
 
-.btm-center-under {
-    background-color: #beafe1;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.btn-main {
+.btn-catboy-main {
     background-color: #76c6d4;
     color: black;
     padding: 8px 10px; 
@@ -55,19 +44,15 @@
     border: none;
 }
 
-.btn-main:hover {
+.btn-catboy-main:hover {
     border-radius: 0.4rem;
     background-color: #6de9ff;
 }
 
-.logo {
+.catboy-logo {
     padding: 0.5rem;
     width: 2rem;
     height: 2rem;
-}
-
-.git-logo {
-    padding-top: 10px;
 }
 
 .catboy {
@@ -86,12 +71,12 @@
     transform: scale(1.5);
 }
 
-.main-content {
+.main-catboy-content {
     display: flex;
     justify-content: center;
 }
 
-.stuff {
+.catboy-btn-container {
     display: flex;
     justify-content: center;
 }

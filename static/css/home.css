@@ -1,0 +1,56 @@
+.top {
+    background-color: #d9b4e2;
+    overflow: hidden;
+}
+
+.top a {
+    font-family: Bebas;
+    padding: 0.5rem 1rem;
+    padding-right: 1rem;
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.top a:hover {
+    background-color: #e9cff0;
+}
+
+.git-logo {
+    padding-top: 10px;
+}
+
+.home-center {
+    text-align: center;
+}
+
+.home-coffee-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home-coffee {
+    width: auto;
+    height: auto;
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+.btm-center-under {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #ccbcf1;
+    padding: 0px 0px;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color: #beafe1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

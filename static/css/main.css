@@ -2,12 +2,11 @@
     :root { font-size: 20px }
 
     .catboy {
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
-
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1919px) {
     .logo { 
         width: 2rem;
         height: 2rem;
@@ -19,6 +18,12 @@
     }
 
     :root { font-size: 25px }
+}
+
+@media (main-width: 768px) {
+    .home-coffee {
+        margin-top: 1rem;
+    }
 }
 
 body {
@@ -39,4 +44,8 @@ body {
 p {
     font-family: Bebas;
     color: black;
+}
+
+.active {
+    background-color: #e9cff0;
 }
