@@ -41,6 +41,11 @@ body {
     src: url("/static/fonts/BebasKai.ttf")
 }
 
+@font-face {
+    font-family: Rubik;
+    src: url("/static/fonts/Rubik-Regular.ttf");
+}
+
 p {
     font-family: Bebas;
     color: black;
