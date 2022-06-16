@@ -50,13 +50,14 @@ def catboys():
     if request.method == 'POST':
         if request.form.get('NewCat') == 'More CatBoys!':
             catboy_url = catboy.img()
+            print(catboy_url)
             catboy_data = requests.get(catboy_url)
             open("catboy.jpg", "wb").write(catboy_data.content)
             Path("catboy.jpg").rename("./static/cats/catboy.jpg")
         else:
-            return render_template("error.html")
-
-    return render_template("catboys.html", catboy_image=full_catboy_filename)
+            return render_template("home.html")
+    else:       
+        return render_template("catboys.html", catboy_image=full_catboy_filename)
 
 
 @app.route('/catgirls', methods=['GET', 'POST'])
@@ -70,10 +71,10 @@ def catgirls():
             open("catgirl.jpg", "wb").write(cargirl_data.content)
             Path("catgirl.jpg").rename("./static/cats/catgirl.jpg")
         else:
-            return render_template("error.html")
+            return render_template("home.html")
 
     return render_template("catgirls.html", catgirl_image=full_catgirl_filename)
-
+    
 
 if __name__ == '__main__':
     app.run(host="127.0.0.1", port=8080, debug=True)
