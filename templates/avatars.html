@@ -17,6 +17,11 @@
     <a href="/catgirls" class="active">
         Cat Girls!
     </a>
+    <div class="support-container">
+        <a href="https://paypal.me/natserra?country.x=RO&locale.x=en_US" target="_blank">
+            <p class="support">Support</p>
+        </a>
+    </div>
 </div>
 <div class="top-catgirl-under">
     <a href="/catgirls">
@@ -48,7 +53,9 @@
         <input type="submit" class="catgirl-btn" value="More Avatars!" name="NewAvatar"/>
     </form>
 </div>
-
+{% for i in range(10) %}
+    <p> {{ url }}</p>
+{% endfor %}
 <div class="btm-catgirl">
     <div class="btm-catgirl-center">
         <p class="catgirl-api">Powered by: </p>

@@ -54,3 +54,14 @@ p {
 .active {
     background-color: #e9cff0;
 }
+
+.support {
+    font-family: Rubik;
+    float: right;
+    opacity: 20%;
+    margin: 0;
+}
+
+.support-container {
+    float: right;
+}

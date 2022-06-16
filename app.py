@@ -31,12 +31,6 @@ app.config['UPLOAD_FOLDER'] = FOLDER
 def bad_request(e):
     return redirect(url_for('error'))
 
-
-@app.route('/error')
-def error():
-    return render_template('error.html')
-
-
 @app.route('/')
 def main():
     return redirect(url_for('home'))
@@ -95,6 +89,10 @@ def avatars():
             return render_template("home.html")
 
     return render_template('avatars.html', avatar_image=full_avatar_filename)
+
+@app.route('/error')
+def error():
+    return render_template('error.html')
 
 
 if __name__ == '__main__':
