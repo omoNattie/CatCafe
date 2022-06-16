@@ -56,8 +56,8 @@ def catboys():
             Path("catboy.jpg").rename("./static/cats/catboy.jpg")
         else:
             return render_template("home.html")
-    else:       
-        return render_template("catboys.html", catboy_image=full_catboy_filename)
+
+    return render_template("catboys.html", catboy_image=full_catboy_filename)
 
 
 @app.route('/catgirls', methods=['GET', 'POST'])
@@ -74,7 +74,7 @@ def catgirls():
             return render_template("home.html")
 
     return render_template("catgirls.html", catgirl_image=full_catgirl_filename)
-    
+
 
 if __name__ == '__main__':
     app.run(host="127.0.0.1", port=8080, debug=True)
