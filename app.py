@@ -14,9 +14,14 @@ open("catboy.jpg", "wb").write(catboy_data.content)
 Path("catboy.jpg").rename("./static/cats/catboy.jpg")
 
 catgirl_url = catgirl.img("neko")
-cargirl_data = requests.get(catgirl_url)
-open("catgirl.jpg", "wb").write(cargirl_data.content)
+catgirl_data = requests.get(catgirl_url)
+open("catgirl.jpg", "wb").write(catgirl_data.content)
 Path("catgirl.jpg").rename("./static/cats/catgirl.jpg")
+
+avatar_url = catgirl.img("avatar")
+avatar_data = requests.get(avatar_url)
+open("avatar.jpg", "wb").write(avatar_data.content)
+Path("avatar.jpg").rename("./static/cats/avatar.jpg")
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = FOLDER
@@ -67,13 +72,29 @@ def catgirls():
     if request.method == 'POST':
         if request.form.get('NewCatG') == 'More CatGirls!':
             catgirl_url = catgirl.img("neko")
-            cargirl_data = requests.get(catgirl_url)
-            open("catgirl.jpg", "wb").write(cargirl_data.content)
+            catgirl_data = requests.get(catgirl_url)
+            open("catgirl.jpg", "wb").write(catgirl_data.content)
             Path("catgirl.jpg").rename("./static/cats/catgirl.jpg")
         else:
             return render_template("home.html")
 
     return render_template("catgirls.html", catgirl_image=full_catgirl_filename)
+
+
+@app.route('/avatars', methods=["GET", "POST"])
+def avatars():
+    full_avatar_filename = os.path.join(app.config['UPLOAD_FOLDER'], 'avatar.jpg')
+
+    if request.method == 'POST':
+        if request.form.get('NewAvatar') == 'More Avatars!':
+            avatar_url = catgirl.img("avatar")
+            avatar_data = requests.get(avatar_url)
+            open("avatar.jpg", "wb").write(avatar_data.content)
+            Path("avatar.jpg").rename("./static/cats/avatar.jpg")
+        else:
+            return render_template("home.html")
+
+    return render_template('avatars.html', avatar_image=full_avatar_filename)
 
 
 if __name__ == '__main__':
