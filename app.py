@@ -23,6 +23,11 @@ avatar_data = requests.get(avatar_url)
 open("avatar.jpg", "wb").write(avatar_data.content)
 Path("avatar.jpg").rename("./static/cats/avatar.jpg")
 
+kiss_url = catgirl.img("kiss")
+kiss_data = requests.get(kiss_url)
+open("kiss.jpg", "wb").write(kiss_data.content)
+Path("kiss.jpg").rename("./static/cats/kiss.jpg")
+
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = FOLDER
 
@@ -89,6 +94,28 @@ def avatars():
             return render_template("home.html")
 
     return render_template('avatars.html', avatar_image=full_avatar_filename)
+
+
+@app.route('/kiss', methods=['GET', 'POST'])
+def kiss():
+    full_avatar_filename = os.path.join(app.config['UPLOAD_FOLDER'], 'kiss.jpg')
+
+    if request.method == 'POST':
+        if request.form.get('NewKiss') == 'More Kisses!':
+            kiss_url = catgirl.img("kiss")
+            kiss_data = requests.get(kiss_url)
+            open("kiss.jpg", "wb").write(kiss_data.content)
+            Path("kiss.jpg").rename("./static/cats/kiss.jpg")
+        else:
+            return render_template("home.html")
+
+    return render_template('kiss.html', kiss_image=full_avatar_filename)
+
+
+@app.route('/foxgirls')
+def foxgirls():
+    return render_template('foxgirls.html')
+
 
 @app.route('/error')
 def error():

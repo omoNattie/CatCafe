@@ -30,10 +30,10 @@
     <a href="/catgirls">
         Neko
     </a>
-    <a href="/avatars" class="mini-bar-active">
+    <a href="/avatars">
         Avatars
     </a>
-    <a href="/kiss">
+    <a href="/kiss" class="mini-bar-active">
         Kiss
     </a>
     <a href="">
@@ -48,14 +48,15 @@
 </div>
 
 <div class="main-catgirl-content">
-    <img src="{{ avatar_image }}" class="catgirl" alt="avatar"/>
+    <img src="{{ kiss_image }}" class="catgirl" alt="kiss"/>
 </div>
 <br>
 <div class="btn-container">
-    <form action="/avatars" method="post">
-        <input type="submit" class="catgirl-btn" value="More Avatars!" name="NewAvatar"/>
+    <form action="/kiss" method="post">
+        <input type="submit" class="catgirl-btn" value="More Kisses!" name="NewKiss"/>
     </form>
 </div>
+
 <div class="btm-catgirl">
     <div class="btm-catgirl-center">
         <p class="catgirl-api">Powered by: </p>
